@@ -1,0 +1,6 @@
+[Unit]
+Description=RomHeat backup
+
+[Service]
+Type=simple
+ExecStart=/home/romheat/rh_backup.sh

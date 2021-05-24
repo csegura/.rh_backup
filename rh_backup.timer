@@ -1,0 +1,12 @@
+[Unit]
+Description=Romheat Backup configs once every six hours
+
+[Timer]
+# Time to wait after booting before executing the script
+OnBootSec=10min
+# Time between running each consecutive time
+OnUnitActiveSec=6h
+Unit=rh_backup.service
+
+[Install]
+WantedBy=multi-user.target
